@@ -9,7 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="static/css/index_main.less.css" class="main-less">
 	<title>Military Date Calculator</title>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, 
+	user-scalable=0">
 
 	<script type="application/javascript" src="static/js/jquery.min.js"></script>
 	<script type="application/javascript" src="static/marginal/marginal-position.min.js"></script>
@@ -19,7 +20,15 @@
 </head>
 <body>
 	<!-- ~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~ -->
-	
+	<div class="uib-header header-bg container-group inner-element uib_w_1 uib-header-fixed" data-uib="layout/header"
+	data-ver="0" style="background-color: rgb(200, 200, 200); min-height: 35px ! important">
+
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+			<div style="font-weight:900 ; text-align:center; font-size:21px; color:rgb(30,30,30)">Date Calculator
+			</div>
+		</div>
+
+	</div>
 	<!-- ~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~ -->
 	
 	
