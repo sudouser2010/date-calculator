@@ -34,23 +34,41 @@
 		
 			</div>
 			<!-- ~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~ -->
-	
 
-			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ App Ui Container ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+			<div class="upage-content" id="mainsub" style="height:100%">
+				<div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0" 
+				style="height:100%">
+					<div class="col uib_col_6 col-0_12-12" data-uib="layout/col" data-ver="0" style="height:100%">
+						<div class="widget-container content-area vertical-col" style="height:100%">
+					
+					
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						
+							<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						
+							<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						
+						
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Add Period Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Add Period Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 			
-				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+						</div> <!-- /widget-container content-area vertical-col -->
+						<span class="uib_shim"></span>
+					</div> <!-- /col uib_col_6 col-0_12-12 -->
+				</div> <!-- /grid grid-pad urow uib_row_3 row-height-3 -->
+			</div> <!-- /upage-content -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ App Ui Container ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 			
-				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-			
-			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-			
-			
-			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Add Period Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-			
-			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Add Period Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 			
 			<!-- used for keeping the buttons visible -->
 			<div style="margin-top:25%"></div>
+			
 			
 			<!-- ~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~ -->
 			<div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_7" 
