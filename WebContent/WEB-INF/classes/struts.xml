@@ -6,7 +6,7 @@
 <constant name="struts.devMode" value="true" />
    <package name="helloworld" extends="struts-default">
      
-      <action name="app" 
+      <action name="*"
             class="com.dawkins.date.calculator.DateCalculatorApp" 
             method="execute">
             <result name="done">/app.jsp</result>
