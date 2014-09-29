@@ -46,10 +46,63 @@
 					
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 						
+							<!-- ko if: isDateType === false -->
 							<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-			
+							<div class="well no_wrap  widget uib_w_2 d-margins row" data-uib="twitter%20bootstrap/well"
+							data-ver="0" style="padding-bottom: 3px ! important">
+							
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<span style="font-weight: bold;">Sign</span> <br>
+							 
+									<!-- ko if: isPositive() === true -->
+										<i class="glyphicon glyphicon-plus period-icon-offset" style="color:rgb(10,160,15);
+										font-size:25px; cursor:pointer;" data-bind="click: vm.toggleSign"></i>  		
+									<!-- /ko -->
+									<!-- ko if: isPositive() === false -->
+										<i class="glyphicon glyphicon-minus period-icon-offset" style="color:rgb(230,10,15);
+										 font-size:25px; cursor:pointer;" data-bind="click: vm.toggleSign"></i>			
+									<!-- /ko -->
+									
+								</div>
+							
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 row no-padding">
+									
+									<div class="row no-padding" style="margin:0px">
+										<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 no-padding">
+											<label class="narrow-control label-top-left label-align no-padding">
+												Period Start
+											</label>
+										</div>
+										
+										<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 no-padding" 
+										style="text-align:right !important; height:0px;">
+											<i class="glyphicon glyphicon-remove" 
+											style=" color:rgb(200,10,15); top:-4px; font-size:20px; cursor:pointer"
+											data-bind="click: vm.removeElement"></i>                        
+										</div>                                                 
+									
+									</div>
+									
+							
+									<div class="row" style="margin:0px; padding:0px 0px 8px 0px">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" 
+										style="padding:0px 8px 0px 0px">
+											<input class="wide-control form-control date-input" 
+											type="date" placeholder="mm/dd/yyyy">
+							
+											<label class="narrow-control label-top-left label-align">
+												Period End
+											</label>
+											<input class="wide-control form-control date-input" 
+											type="date" placeholder="mm/dd/yyyy">
+										</div>
+									</div>
+								</div>
+							
+							</div>			
 							<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-						
+							<!-- /ko -->
+							
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 						
 						
