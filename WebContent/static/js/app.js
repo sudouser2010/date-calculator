@@ -23,6 +23,19 @@ function dateElement(days, months, years)
 {
 	var self 	= this;
 	
+    //-------------------------alters input
+    //if user types in nothing, code assumes its zero
+    if(days === '') {
+        days = 0;
+    }
+    if(months === '') {
+        months = 0;
+    }
+    if(years === '') {
+        years = 0;
+    }
+    //-------------------------alters input
+
 	//-----------------------from user input
 	self.days		= ko.observable(days);
 	self.months		= ko.observable(months);
@@ -301,9 +314,7 @@ function app()
 
 	self.calculate = function()
 	{
-
 		logic.calculate();
-	
 	}	
 	
 }
