@@ -1,0 +1,75 @@
+.no-curve{
+			-webkit-border-radius: 0 !important;
+			-moz-border-radius: 0 !important;
+			border-radius: 0 !important;
+			}
+.no-padding{
+padding:0px;
+}
+.calculate-btn{
+	background-color: rgb(181,181,252);
+background: rgb(206,220,231); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */                
+}
+.clear-btn{
+	background-color: rgb(252,181,181);
+	background: rgb(206,220,231); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(206,220,231,1) 0%, rgba(234mail.com 5zarwQre23#
+,53,53,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(234,53,53,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(234,53,53,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(234,53,53,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(234,53,53,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(206,220,231,1) 0%,rgba(234,53,53,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#ea3535',GradientType=0 ); /* IE6-9 */
+
+}    
+.dark-gray{
+	color:rgb(30,30,30);
+}
+.button-height{
+height:40px; 
+padding-top: 5px !important;
+padding-bottom: 5px !important;                
+}
+.date-input{
+	padding:3px;
+	height:25px;
+}
+.well{
+	padding:5px;
+}
+.row{
+	margin-left: 0px; margin-right: : 0px;
+}
+.period-icon-offset{
+	top:20px;
+}
+table{
+	background-color: transparent;
+}
+.label-align{
+	text-align: left;
+}
+.date-entry{
+	padding:0px 8px 0px 0px !important;
+}
+
+/* Prevent copy paste for all elements except text fields */
+*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+input, textarea  { -webkit-user-select:text; }
+
+body {
+    overflow:hidden;
+}
+
+.d-margins {
+    margin-bottom: 9px;
+}
+
