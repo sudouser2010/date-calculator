@@ -160,3 +160,86 @@ function dateElement(uniqueId)
 }
 //----------------------------------------------defines date element
 
+//-------------------------------------------------------------------defines period element
+//a period consists of 2 dates
+function periodElement(uniqueId)
+{
+	var self 	= this;
+	
+	//ymd stands for year, month, day
+	//the value is obtained as a string
+	self.ymdStart	= ko.observable('');
+	self.ymdEnd		= ko.observable('');
+	
+	//uid means unique id
+	self.uid		= uniqueId;
+	
+	self.isPositive	= ko.observable(true);			
+	self.isDateType	= false;
+}
+//-------------------------------------------------------------------defines period element
+
+//----------------------------------------------defines main logic of app element
+function mainLogic(appParent)
+{
+	var self	= this;
+	
+	self.getTotalDays = function()
+	{
+		var sum = 0;
+		for(i=0; i< appParent.timeElements().length; i++)
+		{
+			appParent.timeElements()[i].convertToDays();
+			sum = sum + appParent.timeElements()[i].totalDays;
+		}
+		return sum;
+		
+	}
+	
+	self.getQuotientAndRemainder = function( dividend, divisor )
+	{
+		//returns quotient and remainder in an array
+		quotient	= Math.floor(dividend/divisor);				
+		remainder 	= dividend % divisor;
+		
+		return [quotient, remainder];
+	}			
+	
+	self.convertTotalTimeToDate = function( totalDays )
+	{
+		//returns time as an array of [years,months,days]
+		quotientRemainder = self.getQuotientAndRemainder( totalDays, 360 );
+		years			= quotientRemainder[0];
+		remainingDays	= quotientRemainder[1];
+		
+		quotientRemainder = self.getQuotientAndRemainder( remainingDays, 30 );
+		months			= quotientRemainder[0];
+		remainingDays	= quotientRemainder[1];		
+
+		return [years, months, remainingDays];
+	
+	
+	}
+	
+	self.calculate = function()
+	{
+	
+		try
+		{
+			totalDays 		= self.getTotalDays();
+			yearsMonthsDays	= self.convertTotalTimeToDate(totalDays);
+			alert(yearsMonthsDays);
+		}
+		catch(err)
+		{
+			alert('Error');
+		}
+
+	}			
+
+}
+//----------------------------------------------defines main logic of app element
+
+
+
+
