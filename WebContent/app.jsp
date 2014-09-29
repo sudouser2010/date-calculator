@@ -47,14 +47,23 @@
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 						
 							<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-						
+			
 							<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 						
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 						
 						
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Add Period Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<div class="no_wrap  widget uib_w_3 d-margins row" >
 						
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">                                             
+								<button type="button" class="btn btn-default btn-sm" style="width:100%" 
+								data-bind="click: vm.createPeriod">
+									Add Period
+								</button>
+							</div>
+						
+						</div>
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Add Period Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 			
 
