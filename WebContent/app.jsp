@@ -18,7 +18,6 @@
 	
 	<link rel="stylesheet" type="text/css" href="static/css/custom-styles.css" />
 	<script type="application/javascript" src="static/js/knockout.js"></script>
-	<script type="application/javascript" src="static/js/app.js"></script>	
 </head>
 <body>
 	<div class="uwrap" >
@@ -47,6 +46,7 @@
 					
 					
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						<span id="elementContainer" data-bind="foreach: vm.timeElements" >
 						
 							<!-- ko if: isDateType === false -->
 							<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -140,6 +140,7 @@
 							<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 							<!-- /ko -->
 							
+						</span>
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 						
 						
@@ -195,6 +196,6 @@
 			</div> <!-- /upage-outer -->
 		</div> <!-- /upage -->
 	</div> <!-- /uwrap -->	
-	
+	<script type="application/javascript" src="static/js/app.js"></script>	
 </body>
 </html>

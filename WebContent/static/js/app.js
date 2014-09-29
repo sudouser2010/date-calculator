@@ -242,4 +242,66 @@ function mainLogic(appParent)
 
 
 
+//----------------------------------defines app element
+function app() 
+{
+	var self				= this;
+	self.timeElements		= ko.observableArray([]);
+	logic 					= new mainLogic(self);			
 
+	
+	//this is what I use to give each element a unique id
+	self.uniqueItemCount	= 0;
+	
+	self.createDate = function()
+	{
+		//adds a date element to the bottom of the element container
+		self.timeElements.push( new dateElement(self.uniqueItemCount) );
+		self.uniqueItemCount++;
+	}
+	
+	self.createPeriod = function()
+	{
+		//adds a date element to the bottom of the element container
+		self.timeElements.push( new periodElement(self.uniqueItemCount) );
+		self.uniqueItemCount++;
+	}	
+
+	self.clear = function()
+	{
+		self.timeElements([]);
+	}
+	
+	self.removeElement = function(element)
+	{
+
+		for(i=0; i<self.timeElements().length; i++) 
+		{
+			if( element["uid"] === self.timeElements()[i]["uid"])
+			{
+				self.timeElements.removeValueAtIndex(i);
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	self.toggleSign = function(element)
+	{
+		element.isPositive( !element.isPositive() );
+	}	
+
+	self.calculate = function()
+	{
+
+		logic.calculate();
+	
+	}	
+	
+}
+//----------------------------------defines app element
+
+//------------------------creates an instance of the app called vm and applies bindings to it
+var vm = new app();
+ko.applyBindings(vm);
+//------------------------creates an instance of the app called vm and applies bindings to it
