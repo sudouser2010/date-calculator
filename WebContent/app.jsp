@@ -35,7 +35,7 @@
 			</div>
 			<!-- ~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~ -->
 	
-	
+
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 			
 				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -51,7 +51,25 @@
 			
 			
 			<!-- ~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~ -->
-			
+			<div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_7" 
+			data-uib="layout/footer" data-ver="0" style="min-height:20px !important">
+
+				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 no-padding">
+					<button type="button" class="btn-lg btn-block no-curve calculate-btn button-height" 
+					data-bind="click: vm.calculate">
+						<i class="glyphicon glyphicon-play button-icon-center" style="left:-20px; color: white"></i>
+						<span style="font-weight:900" class="dark-gray">Calculate</span>
+					</button>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 no-padding">
+					<button type="button" class="btn-lg btn-block no-curve clear-btn button-height" 
+					data-bind="click: vm.clear">
+						<i class="glyphicon glyphicon-refresh button-icon-center" style="left:-2px; color: white"></i>
+						<span style="font-weight:900" class="dark-gray">Clear</span>
+					</button>
+				</div>
+
+			</div>
 			<!-- ~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~ -->
 			</div> <!-- /upage-outer -->
 		</div> <!-- /upage -->
