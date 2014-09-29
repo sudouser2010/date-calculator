@@ -133,13 +133,6 @@ function dateElement(days, months, years)
 		}
 	
 	}
-	
-	
-	self.preformatSelf = function()
-	{
-		//applies rule 3 fix
-	
-	}
 
 	self.convertToDays = function()
 	{
@@ -147,7 +140,7 @@ function dateElement(days, months, years)
 		self.doLastDayOfMonthCorrection();
 		
 		//the +1 at the end is to make it inclusive
-		self.totalDays	=  parseInt(self.years()*360) + parseInt(self.months()*30) + parseInt(self.days()) + 1; 
+		self.totalDays	=  parseInt(self.years()*365) + parseInt(self.months()*30) + parseInt(self.days()) + 1; 
 	}			
 
 }
@@ -184,6 +177,11 @@ function periodElement(uniqueId)
 
         self.totalDays = endDate.totalDays - startDate.totalDays;
 
+        if (!self.isPositive()) {
+            //make totalDays negative if sign is minus
+            self.totalDays = self.totalDays*-1;   
+        }
+
     }		
 }
 //-------------------------------------------------------------------defines period element
@@ -217,7 +215,7 @@ function mainLogic(appParent)
 	self.convertTotalTimeToDate = function( totalDays )
 	{
 		//returns time as an array of [years,months,days]
-		quotientRemainder = self.getQuotientAndRemainder( totalDays, 360 );
+		quotientRemainder = self.getQuotientAndRemainder( totalDays, 365 );
 		years			= quotientRemainder[0];
 		remainingDays	= quotientRemainder[1];
 		
@@ -236,8 +234,9 @@ function mainLogic(appParent)
 		try
 		{
 			var totalDays 		= self.getTotalDays();
-			var yearsMonthsDays	= self.convertTotalTimeToDate(totalDays);
-			alert(yearsMonthsDays);
+            alert("TotalDays = " + totalDays + " DAYS");
+			//var yearsMonthsDays	= self.convertTotalTimeToDate(totalDays);
+			//alert(yearsMonthsDays);
 		}
 		catch(err)
 		{
