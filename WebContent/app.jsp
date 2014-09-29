@@ -19,35 +19,43 @@
 	<script type="application/javascript" src="static/js/knockout.js"></script>		
 </head>
 <body>
-	<!-- ~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~ -->
-	<div class="uib-header header-bg container-group inner-element uib_w_1 uib-header-fixed" data-uib="layout/header"
-	data-ver="0" style="background-color: rgb(200, 200, 200); min-height: 35px ! important">
-
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
-			<div style="font-weight:900 ; text-align:center; font-size:21px; color:rgb(30,30,30)">Date Calculator
+	<div class="uwrap" >
+		<div class="upage" id="mainpage">
+			<div class="upage-outer">
+			<!-- ~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~ -->
+			<div class="uib-header header-bg container-group inner-element uib_w_1 uib-header-fixed" 
+			data-uib="layout/header" data-ver="0" style="background-color: rgb(200, 200, 200); 
+			min-height: 35px ! important">
+		
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+					<div style="font-weight:900 ; text-align:center; font-size:21px; color:rgb(30,30,30)">Date Calculator
+					</div>
+				</div>
+		
 			</div>
-		</div>
-
-	</div>
-	<!-- ~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~ -->
+			<!-- ~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~ -->
 	
 	
-	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			
+			
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Add Period Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Add Period Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			
+			
+			<!-- ~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~ -->
+			
+			<!-- ~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~ -->
+			</div> <!-- /upage-outer -->
+		</div> <!-- /upage -->
+	</div> <!-- /uwrap -->	
 	
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	
-	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	
-	
-	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Add Period Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	
-	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Add Period Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	
-	
-	<!-- ~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~ -->
-	
-	<!-- ~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~ -->		
 </body>
 </html>
