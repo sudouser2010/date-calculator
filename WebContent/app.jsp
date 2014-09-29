@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
+<!--HTML5 doctype-->
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -61,8 +63,7 @@
 									<!-- ko if: isPositive() === false -->
 										<i class="glyphicon glyphicon-minus period-icon-offset" style="color:rgb(230,10,15);
 										 font-size:25px; cursor:pointer;" data-bind="click: vm.toggleSign"></i>			
-									<!-- /ko -->
-									
+									<!-- /ko -->									
 								</div>
 							
 								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 row no-padding">
@@ -79,22 +80,58 @@
 											<i class="glyphicon glyphicon-remove" 
 											style=" color:rgb(200,10,15); top:-4px; font-size:20px; cursor:pointer"
 											data-bind="click: vm.removeElement"></i>                        
-										</div>                                                 
-									
+										</div>                                                 									
 									</div>
 									
-							
+
 									<div class="row" style="margin:0px; padding:0px 0px 8px 0px">
 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" 
 										style="padding:0px 8px 0px 0px">
-											<input class="wide-control form-control date-input" 
-											type="date" placeholder="mm/dd/yyyy">
+										
+											<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Start Date ~~~~~~~~~~~~~~~~~~~~~~~~~ -->										
+											<div class="row no-padding" style="margin:0px">
+												<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" 
+												style="padding:0px 8px 0px 0px">
+													<input class="wide-control form-control date-input" 
+													type="number" placeholder="Month" data-bind="value:smonth">
+												</div>
+												<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" 
+												style="padding:0px 8px 0px 0px">
+													<input class="wide-control form-control date-input" 
+													type="number" placeholder="Day" data-bind="value:sday">
+												</div>
+												<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" 
+												style="padding:0px 8px 0px 0px">
+													<input class="wide-control form-control date-input" 
+													type="number" placeholder="Year" data-bind="value:syear">
+												</div>
+											</div>
+											<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Start Date ~~~~~~~~~~~~~~~~~~~~~~~~~ -->											
 							
 											<label class="narrow-control label-top-left label-align">
 												Period End
 											</label>
-											<input class="wide-control form-control date-input" 
-											type="date" placeholder="mm/dd/yyyy">
+											
+											<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ End Date ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+											<div class="row no-padding" style="margin:0px">
+												<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" 
+												style="padding:0px 8px 0px 0px">
+													<input class="wide-control form-control date-input" 
+													type="number" placeholder="Month" data-bind="value:emonth">
+												</div>
+												<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" 
+												style="padding:0px 8px 0px 0px">
+													<input class="wide-control form-control date-input" 
+													type="number" placeholder="Day" data-bind="value:eday">
+												</div>
+												<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" 
+												style="padding:0px 8px 0px 0px">
+													<input class="wide-control form-control date-input" 
+													type="number" placeholder="Year" data-bind="value:eyear">
+												</div>
+											</div>
+											<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ End Date ~~~~~~~~~~~~~~~~~~~~~~~~~ -->											
+
 										</div>
 									</div>
 								</div>
