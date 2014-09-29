@@ -17,7 +17,8 @@
 	<script type="application/javascript" src="static/marginal/marginal-position.min.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="static/css/custom-styles.css" />
-	<script type="application/javascript" src="static/js/knockout.js"></script>		
+	<script type="application/javascript" src="static/js/knockout.js"></script>
+	<script type="application/javascript" src="static/js/app.js"></script>	
 </head>
 <body>
 	<div class="uwrap" >
