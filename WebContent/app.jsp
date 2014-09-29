@@ -49,6 +49,8 @@
 			
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Add Period Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 			
+			<!-- used for keeping the buttons visible -->
+			<div style="margin-top:25%"></div>
 			
 			<!-- ~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~ -->
 			<div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_7" 
@@ -71,6 +73,8 @@
 
 			</div>
 			<!-- ~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~ -->
+			
+			
 			</div> <!-- /upage-outer -->
 		</div> <!-- /upage -->
 	</div> <!-- /uwrap -->	
