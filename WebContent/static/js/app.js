@@ -19,20 +19,16 @@ ko.observableArray.fn.changeValueAtIndex = function(index,value)
 
 
 //----------------------------------------------defines date element
-function dateElement(uniqueId)
+function dateElement(days, months, years)
 {
 	var self 	= this;
 	
 	//-----------------------from user input
-	self.years		= ko.observable();
-	self.months		= ko.observable();
-	self.days		= ko.observable();
-	self.isPositive	= ko.observable(true);		
+	self.days		= ko.observable(days);
+	self.months		= ko.observable(months);
+	self.years		= ko.observable(years);	
 	//-----------------------from user input
 	
-	//uid means unique id			
-	self.uid		= uniqueId;
-	self.isDateType	= true;
 	self.totalDays	= 0;
 						
 	self.isDivisibleBy = function( dividend, divisor )
@@ -161,21 +157,26 @@ function dateElement(uniqueId)
 //----------------------------------------------defines date element
 
 //-------------------------------------------------------------------defines period element
-//a period consists of 2 dates
 function periodElement(uniqueId)
 {
 	var self 	= this;
 	
 	//ymd stands for year, month, day
 	//the value is obtained as a string
-	self.ymdStart	= ko.observable('');
-	self.ymdEnd		= ko.observable('');
-	
+	self.ymdStart	= new dateElement(0, 0, 0);
+	self.ymdEnd		= new dateElement(0, months, years);
+
+    self.sday       = '';
+    self.eday       = '';
+    self.smonth     = '';
+    self.emonth     = '';
+    self.syear      = '';
+    self.eyear      = '';	
+    
 	//uid means unique id
 	self.uid		= uniqueId;
 	
 	self.isPositive	= ko.observable(true);			
-	self.isDateType	= false;
 }
 //-------------------------------------------------------------------defines period element
 

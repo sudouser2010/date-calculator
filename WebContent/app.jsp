@@ -48,7 +48,7 @@
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 						<span id="elementContainer" data-bind="foreach: vm.timeElements" >
 						
-							<!-- ko if: isDateType === false -->
+							
 							<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 							<div class="well no_wrap  widget uib_w_2 d-margins row" data-uib="twitter%20bootstrap/well"
 							data-ver="0" style="padding-bottom: 3px ! important">
@@ -138,7 +138,7 @@
 							
 							</div>			
 							<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Period Panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-							<!-- /ko -->
+							
 							
 						</span>
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ For all the time elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
