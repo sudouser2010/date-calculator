@@ -148,9 +148,6 @@ function dateElement(days, months, years)
 		
 		//the +1 at the end is to make it inclusive
 		self.totalDays	=  parseInt(self.years()*360) + parseInt(self.months()*30) + parseInt(self.days()) + 1; 
-		sign = ( self.isPositive() ) ? 1:-1;
-		
-		self.totalDays	= self.totalDays*sign;
 	}			
 
 }
@@ -161,22 +158,33 @@ function periodElement(uniqueId)
 {
 	var self 	= this;
 	
-	//ymd stands for year, month, day
-	//the value is obtained as a string
-	self.ymdStart	= new dateElement(0, 0, 0);
-	self.ymdEnd		= new dateElement(0, months, years);
-
+    //s isfor start, e is for end
     self.sday       = '';
-    self.eday       = '';
     self.smonth     = '';
-    self.emonth     = '';
     self.syear      = '';
+
+    self.eday       = '';
+    self.emonth     = '';
     self.eyear      = '';	
     
 	//uid means unique id
 	self.uid		= uniqueId;
 	
-	self.isPositive	= ko.observable(true);			
+	self.isPositive	= ko.observable(true);	
+
+    self.convertToDays = function() 
+    {
+        //get total days for start
+        var startDate = new dateElement(self.sday, self.smonth, self.syear);       
+        startDate.convertToDays();
+
+        //get total days for end
+        var endDate = new dateElement(self.eday, self.emonth, self.eyear);
+        endDate.convertToDays();
+
+        self.totalDays = endDate.totalDays - startDate.totalDays;
+
+    }		
 }
 //-------------------------------------------------------------------defines period element
 
@@ -227,8 +235,8 @@ function mainLogic(appParent)
 	
 		try
 		{
-			totalDays 		= self.getTotalDays();
-			yearsMonthsDays	= self.convertTotalTimeToDate(totalDays);
+			var totalDays 		= self.getTotalDays();
+			var yearsMonthsDays	= self.convertTotalTimeToDate(totalDays);
 			alert(yearsMonthsDays);
 		}
 		catch(err)
